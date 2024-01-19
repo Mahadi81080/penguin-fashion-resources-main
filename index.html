@@ -24,6 +24,15 @@
       .font-roboto {
         font-family: "Roboto", sans-serif;
       }
+      @media screen and (max-width:576px) {
+        nav{
+          flex-direction: column;
+        } 
+        .banner{
+          flex-direction: column;
+          margin-top: 30px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -32,7 +41,7 @@
         <div class="flex items-center gap-3">
           <img src="penguin-fashion-resources-main/icons/Frame.svg" alt="" />
           <h3 class="text-xl font-bold">
-            <span class="text-[#A4BC46]">Penguin </span>Fashion
+            <span class="text-[#A4BC46]">Penguin</span>Fashion
           </h3>
         </div>
         <ul class="grid grid-cols-4">
@@ -43,7 +52,7 @@
         </ul>
       </nav>
 
-      <div class="flex justify-between items-center max-w-6xl mx-auto">
+      <div class=" banner flex justify-between items-center max-w-6xl mx-auto">
         <div class="space-y-4">
           <h3 class="font-bebas text-7xl text-[#FABE4C] uppercase">
             Be the Penguins <br />
@@ -220,7 +229,7 @@
       </section>
     </main>
     <footer>
-      <div class="grid grid-cols-2 gap-8 max-w-6xl mx-auto my-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto my-6">
         <div class="space-y-6">
           <div class="flex gap-4 shadow p-4">
             <div class="w-20">
